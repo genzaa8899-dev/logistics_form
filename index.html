@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ระบบสมัครนักศึกษาโลจิสติกส์</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <form id="logisticsForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdWtulE21RS2xmMsXSSfwThznxESGKGs7I20LleOjq6BqWsQw/formResponse"
+        method="POST" target="hidden_iframe" onsubmit="alert('ส่งข้อมูลสำเร็จ!');">
+    
+    <h1>ระบบสมัครนักศึกษาโลจิสติกส์</h1>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="section-title" id="sectionPersonal">ข้อมูลส่วนตัว</div>
+    <div class="form-group">
+      <i class="fa fa-user"></i>
+      <input id="firstName" name="entry.527681934" type="text" required placeholder="ชื่อ" />
+    </div>
+    <div class="form-group">
+      <i class="fa fa-user"></i>
+      <input id="lastName" name="entry.136391953" type="text" required placeholder="นามสกุล" />
+    </div>
+
+    <div class="section-title" id="sectionAddress">ที่อยู่</div>
+    <div class="form-group">
+      <i class="fa fa-home"></i>
+      <input id="address" name="entry.579364324" type="text" required placeholder="ที่อยู่" />
+    </div>
+    <div class="form-group">
+      <i class="fa fa-map-pin"></i>
+      <input id="subDistrict" name="entry.1313746927" type="text" required placeholder="ตำบล" />
+    </div>
+    <div class="form-group">
+      <i class="fa fa-map-marker-alt"></i>
+      <input id="district" name="entry.167633806" type="text" required placeholder="อำเภอ" />
+    </div>
+    <div class="form-group">
+      <i class="fa fa-flag"></i>
+      <input id="province" name="entry.1869403719" type="text" required placeholder="จังหวัด" />
+    </div>
+    <div class="form-group">
+      <i class="fa fa-globe"></i>
+      <input id="country" name="entry.1039823803" type="text" required placeholder="ประเทศ" />
+    </div>
+
+    <div class="section-title" id="sectionContact">ช่องทางการติดต่อ</div>
+    <div class="form-group">
+      <i class="fa fa-weixin"></i>
+      <input id="wechat" name="entry.997598808" type="text" required placeholder="WeChat ID" />
+    </div>
+
+    <button type="submit">ส่งแบบฟอร์ม</button>
+  </form>
+
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+  <script src="js/script.js"></script>
+</body>
+</html>

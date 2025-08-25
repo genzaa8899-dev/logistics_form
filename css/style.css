@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  background-color: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 95%;
+  max-width: 520px;
+  transition: transform 0.3s;
+}
+form:hover { transform: translateY(-5px); }
+h1 {
+  text-align: center;
+  color: #d81b60;
+  margin-bottom: 25px;
+}
+.progress-container {
+  background-color: #ffe6f0;
+  border-radius: 20px;
+  height: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #f06292;
+  border-radius: 20px;
+  transition: width 0.3s;
+}
+.section-title {
+  font-weight: 600;
+  color: #880e4f;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px dashed #f06292;
+  padding-bottom: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-group i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f48fb1;
+}
+input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+input::placeholder { color: #f48fb1; }
+input:focus {
+  border-color: #f06292;
+  box-shadow: 0 0 5px rgba(240,98,146,0.5);
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f06292;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+button:hover { background-color: #ec407a; transform: translateY(-2px); }
+@media (max-width: 500px) {
+  form { padding: 20px; }
+  input, button { font-size: 16px; padding: 10px; }
+}
